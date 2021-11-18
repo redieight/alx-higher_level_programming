@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-if __name__=="__main__":
-    from calculator_1 import add, sub, mul, div
+from calculator_1 import add, sub, mul, div
 
+
+def main():
     a = 10
     b = 5
+    sym = ['+', '-', '*', '/']
+    op = {0: add, 1: sub, 2: mul, 3: div}
+    for i in op:
+        print('{:d} {:} {:d} = {:d}'.format(a, sym[i], b, op[i](a, b)))
 
-    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
-    print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-    print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-    print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+if __name__ == "__main__":
+    main()
