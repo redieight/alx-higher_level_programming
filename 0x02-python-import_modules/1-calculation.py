@@ -10,5 +10,6 @@ def main():
     for i in op:
         print('{:d} {:} {:d} = {:d}'.format(a, sym[i], b, op[i](a, b)))
 
+
 if __name__ == "__main__":
     main()
