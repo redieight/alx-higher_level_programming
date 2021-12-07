@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 0-square.py
-# worked by rediet abidisa 
+# Rediet Abdisa
 """Define a class Square."""
 
 
